@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="{{ url_for('static',filename='css/calcStyle.css') }}">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora | Caique R.</title>
+</head>
+<body>
+    <form action="/calculadora" method="POST"> Calculadora FLASK
+        <label for="v1">Valor 1
+            <input type="text" id='v1' name="v1">
+        </label>
+
+        <label for="v2">Valor 2
+            <input type="text" id='v2' name="v2">
+        </label>
+
+        <label for="operacao">Operação
+            <select id="operacao" name="operacao">
+                <option value="1">Soma</option>
+                <option value="2">Subtração</option>
+                <option value="3">Divisão</option>
+                <option value="4">Multiplicação</option>
+              </select>
+        </label>
+
+        <input type="submit" id="submitButton" name="Calcular" value="Calcular">
+    </form>
+
+    <!-- <script src="{{ url_for('static',filename='javascriptFileName.js') }}"> </script> -->
+</body>
+</html>
